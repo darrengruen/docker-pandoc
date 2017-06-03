@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+docker run \
+    -it \
+    --rm \
+    -v "$(pwd)":/root/pandoc:rw \
+    --name pandoc_"$(date +%s)" \
+    gruen/pandoc "${@}"
