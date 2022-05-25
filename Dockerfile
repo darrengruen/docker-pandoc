@@ -5,6 +5,7 @@ LABEL maintainer "Darren Green <darren@gruen.site>"
 RUN apt-get update -y \
     && apt-get install -y \
         pandoc \
+        texlive-latex-base \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get clean \
     && apt-get autoremove -y
